@@ -1,6 +1,0 @@
-/Users/zhaochengze1999/01CodeBase/02Learn/02Algo/03BackTracking/例题2/build/CMakeFiles/main.dir
-/Users/zhaochengze1999/01CodeBase/02Learn/02Algo/03BackTracking/例题2/build/CMakeFiles/edit_cache.dir
-/Users/zhaochengze1999/01CodeBase/02Learn/02Algo/03BackTracking/例题2/build/CMakeFiles/rebuild_cache.dir
-/Users/zhaochengze1999/01CodeBase/02Learn/02Algo/03BackTracking/例题2/build/preOrder/CMakeFiles/PreOrder.dir
-/Users/zhaochengze1999/01CodeBase/02Learn/02Algo/03BackTracking/例题2/build/preOrder/CMakeFiles/edit_cache.dir
-/Users/zhaochengze1999/01CodeBase/02Learn/02Algo/03BackTracking/例题2/build/preOrder/CMakeFiles/rebuild_cache.dir

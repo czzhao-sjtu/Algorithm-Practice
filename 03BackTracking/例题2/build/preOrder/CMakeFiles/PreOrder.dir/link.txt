@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libPreOrder.a CMakeFiles/PreOrder.dir/preOrder.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libPreOrder.a
