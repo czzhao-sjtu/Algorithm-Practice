@@ -28,5 +28,11 @@ def main():
 
     print(solution(weights, values, capability))    
 
+    print("Test 3")
+    weights = [4, 1, 2, 3, 4]
+    values = [5, 2, 4, 4, 5]
+    capability = 5
+    print(solution(weights, values, capability))
+
 if __name__ == "__main__":
     main()
