@@ -2,7 +2,6 @@
 #include <vector>
 #include <iostream>
 
-
 int main(){
     // Test1
     std::vector<int> preorder = {3, 9, 2, 1, 7};
