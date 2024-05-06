@@ -109,7 +109,7 @@ TreeNode *removeHelper(TreeNode *root, int num){
             AVL::inorder(root->right, inorder_list);
 
             int temp = inorder_list[0]->val;
-            root->left = removeHelper(root->left, temp);
+            root->right = removeHelper(root->right, temp);
             root->val = temp;
         }else if (root->left != nullptr && root->right == nullptr){
             TreeNode *child = root->left;

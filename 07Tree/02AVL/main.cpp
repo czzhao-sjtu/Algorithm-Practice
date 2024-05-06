@@ -39,4 +39,13 @@ int main(){
     inorder_list = std::vector<TreeNode*>();
     tree2.inorder(tree2.root, inorder_list);
     print_vector_TreeNode(inorder_list);
+
+    for (int idx = 99; idx >=0 ; idx--){
+        tree2.remove(idx);
+    }
+
+    inorder_list = std::vector<TreeNode*>();
+    tree2.inorder(tree2.root, inorder_list);
+    print_vector_TreeNode(inorder_list);
+    return 0;
 }
