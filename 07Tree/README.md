@@ -102,3 +102,32 @@
 1. 作为系统中的多级索引，实现高效的查找、插入、删除操作；
 2. 作为某些算法的底层数据结构；
 3. 用于存储数据流，以保持其有序状态。
+
+## 3. AVL树
+AVL树的旋转  
+AVL树的旋转操作可以在不影响二叉树的中序遍历的情况下，使失衡节点重新恢复平衡。  
+我们将平衡因子>1的节点称为失衡节点。
+
+1. 右旋  
+下图中共有两个失衡节点，从底至顶看，**首个失衡节点**为节点3.![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_right_rotate_step1.png)  
+我们聚焦该失衡节点构成的子树上，该节点标记为`node`, 其左子节点标记为`child`。![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_right_rotate_step2.png)  
+我们通过**右旋**操作使得该子树恢复平衡。![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_right_rotate_step3.png)  
+![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_right_rotate_step4.png)  
+当节点`child`中存在右子节点时(记作`grand_child`), 需要在右旋中添加一步，即将`grand_child`作为`child`的左子节点。![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_right_rotate_with_grandchild.png)
+
+2. 左旋  
+左旋是右旋的镜像。![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_left_rotate.png)
+![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_left_rotate_with_grandchild.png)
+
+3. 先左旋后右旋  
+![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_left_right_rotate.png)
+
+4. 先右旋再左旋  
+![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_right_left_rotate.png)
+
+5. 旋转的选择  
+![](https://www.hello-algo.com/chapter_tree/avl_tree.assets/avltree_rotation_cases.png)
+
+AVL树的插入操作  
+1. AVL 树的节点插入操作与二叉搜索树在主体上类似。唯一的区别在于，在 AVL 树中插入节点后，从该节点到根节点的路径上可能会出现一系列失衡节点。因此，我们需要从这个节点开始，**自底向上执行旋转操作，使所有失衡节点恢复平衡**。
+2. 类似地，在二叉搜索树的删除节点方法的基础上，需要**从底至顶执行旋转操作，使所有失衡节点恢复平衡**。
