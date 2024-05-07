@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "mkdir",
+        "type": "shell",
+        "command": "mkdir build"
+      },
+  
+      {
+        "label": "cmake-debug",
+        "type": "shell",
+        "command": "cmake -DCMAKE_BUILD_TYPE=debug ..",
+        "dependsOn": ["mkdir"], 
+        "options": {
+          "cwd": "${workspaceFolder}/build" 
+        }
+      },
+  
+      {
+        "label": "make",
+        "type": "shell",
+        "command": "make -j4",
+        "options": {
+          "cwd": "${workspaceFolder}/build" 
+        }
+      },
+      {
+        "label": "cmake-clean",
+        "type":"shell",
+        "command": "rm -r build", 
+        "options": {
+          "cwd": "${workspaceFolder}"
+        }
+      }
+
+    ]
+  }
